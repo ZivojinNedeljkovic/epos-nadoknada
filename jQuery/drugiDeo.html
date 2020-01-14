@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='drugiDeo.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="meni">
+            <a href="prviDeo.html">prvi deo</a>
+            <a href="">drugi deo</a>
+        </div>
+    </header>
+    <div id="nekiMeni">
+        <div id="glavniDeo">
+            <button id="meniDugme">naziv menia</button>
+            <a href="">jedan</a>
+            <a href="">dva</a>
+            <a href="">tri</a>
+            <a href="">cetiri</a>
+            <a href="">pet</a>
+        </div>
+        <div id="padajuciMeni" class="hide">
+            <a href="">jedan</a>
+            <a href="">dva</a>
+            <a href="">tri</a>
+            <a href="">cetiri</a>
+            <a href="">pet</a>
+        </div>
+    </div>
+
+    <script>
+
+
+        window.onclick = function (event) {
+            if (event.target.matches("#meniDugme")) {
+                if (document.getElementById("padajuciMeni").classList.contains("hide"))
+                    document.getElementById("padajuciMeni").classList.remove("hide");
+                else
+                    document.getElementById("padajuciMeni").classList.add("hide");
+            }
+            else {
+                document.getElementById("padajuciMeni").classList.add("hide");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

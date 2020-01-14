@@ -1,0 +1,23 @@
+#Flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#Flexbox div{
+    display: flex;
+    flex-direction: column;
+    border: black 1px solid;
+}
+#flex_element1{
+    justify-content: center;
+    align-items: flex-start;
+}
+#flex_element2{
+    justify-content: center;
+    align-items: center;
+}
+#flex_element3{
+    justify-content: center;
+    align-items: flex-end;
+}
